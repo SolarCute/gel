@@ -22,6 +22,8 @@ static void registerTypes()
     qmlProtectModule(GEL_URI, 1);
 }
 
+#ifndef GEL_MODEL_DISABLE_AUTO_QML_REGISTER
 Q_COREAPP_STARTUP_FUNCTION(registerTypes)
+#endif
 
 } } }
